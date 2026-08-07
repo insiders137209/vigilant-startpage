@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+    max-width: 600px;
+}
+
+.time-section {
+    margin-bottom: 2.5rem;
+}
+
+#clock {
+    font-size: 5.5rem;
+    font-weight: 200;
+    letter-spacing: -2px;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#date {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-top: -0.5rem;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-value {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #38bdf8;
+}
+
+.card-sub {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #38bdf8;
+    transition: width 0.5s ease;
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Aether Startpage",
+  "version": "1.0",
+  "description": "Dashboard minimalist dengan status CPU real-time dan cuaca.",
+  "permissions": [
+    "system.cpu"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <main class="container">
+        <!-- Jam & Tarikh -->
+        <section class="time-section">
+            <h1 id="clock">00:00</h1>
+            <p id="date">Isnin, 1 Januari</p>
+        </section>
+
+        <!-- Kad Metric (Cuaca & CPU) -->
+        <div class="metrics-grid">
+            <div class="card">
+                <span class="card-label">Cuaca Terkini</span>
+                <div class="card-value" id="temp-val">--°C</div>
+                <span class="card-sub" id="weather-location">Memuatkan...</span>
+            </div>
+
+            <div class="card">
+                <span class="card-label">Penggunaan CPU</span>
+                <div class="card-value" id="cpu-val">0%</div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar" id="cpu-bar"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
